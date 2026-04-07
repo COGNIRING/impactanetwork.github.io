@@ -361,11 +361,43 @@
       margin-bottom:10px;
     }
     .prelaunchGrid{margin-top:28px;}
+    .prelaunchGrid{
+      margin-top:28px;
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:18px;
+      align-items:stretch;
+    }
     .miniNote{
       margin-top:12px;
       color:#1e3a8a;
       font-size:13px;
       font-weight:700;
+    }
+    .prelaunchForm{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+      margin-top:14px;
+    }
+    .prelaunchForm label{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+      font-size:12px;
+      color:#334155;
+      font-weight:700;
+    }
+    .prelaunchForm .full{grid-column:1 / -1;}
+    .prelaunchForm input,
+    .prelaunchForm select{
+      padding:10px 11px;
+      border-radius:10px;
+      border:1px solid rgba(2,6,23,.16);
+      background:#fff;
+      color:#0f172a;
+      font-family:inherit;
+      font-size:13px;
     }
     .prelaunchActions{
       margin-top:14px;
@@ -373,6 +405,7 @@
       gap:10px;
       flex-wrap:wrap;
     }
+
     /* CTA */
     .cta{
       background:
@@ -451,6 +484,8 @@
       .cards{grid-template-columns:1fr}
       .twoCol{grid-template-columns:1fr}
       .steps{grid-template-columns:1fr}
+      .prelaunchGrid{grid-template-columns:1fr}
+      .prelaunchForm{grid-template-columns:1fr}
       .ctaBox{grid-template-columns:1fr}
       .ctaActions{justify-content:flex-start}
       .hero h1{font-size:38px}
@@ -485,7 +520,7 @@
         <a href="#plazas">Plazas</a>
         <a href="#comercios">Comercios</a>
         <a href="#proceso">Proceso</a>
-        <a class="navCta" href="https://wa.me/50255392776?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20Impacta%20Network%20y%20c%C3%B3mo%20puedo%20participar%20en%20la%20red%20de%20publicidad%20digital%20en%20centros%20comerciales.%0A%0A%C2%BFPodr%C3%ADan%20brindarme%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio%2C%20ubicaciones%20y%20opciones%20disponibles%3F" target="_blank" rel="noopener">Quiero más información</a>
+        <a class="navCta" href="https://wa.me/50255392776?text=Hola%2C%20vi%20Impacta%20Network%20y%20me%20interesa%20participar%20como%20una%20de%20las%20primeras%20marcas%20dentro%20de%20la%20red%20digital%20en%20centros%20comerciales.%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20ubicaciones%20disponibles%20y%20c%C3%B3mo%20funciona%20la%20preinscripci%C3%B3n." target="_blank" rel="noopener">WhatsApp</a>
       </nav>
     </div>
   </div>
@@ -500,7 +535,7 @@
           Conectamos marcas con audiencias reales mediante formatos de alto impacto, ubicaciones estratégicas y una operación profesional enfocada en resultados.
         </p>
         <div class="heroActions">
-          <a class="btn btnWhatsApp" href="https://wa.me/50255392776?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20Impacta%20Network%20y%20c%C3%B3mo%20puedo%20participar%20en%20la%20red%20de%20publicidad%20digital%20en%20centros%20comerciales.%0A%0A%C2%BFPodr%C3%ADan%20brindarme%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio%2C%20ubicaciones%20y%20opciones%20disponibles%3F" target="_blank" rel="noopener">Quiero más información</a>
+          <a class="btn btnPrimary" href="https://wa.me/50255392776?text=Hola%2C%20vi%20Impacta%20Network%20y%20me%20interesa%20participar%20como%20una%20de%20las%20primeras%20marcas%20dentro%20de%20la%20red%20digital%20en%20centros%20comerciales.%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20ubicaciones%20disponibles%20y%20c%C3%B3mo%20funciona%20la%20preinscripci%C3%B3n." target="_blank" rel="noopener">Solicitar información por WhatsApp</a>
           <a class="btn btnSecondary" href="#servicios">Ver servicios</a>
         </div>
         <div class="micro">Atención comercial por WhatsApp. Propuesta formal con respuesta ágil.</div>
